@@ -17,31 +17,31 @@ pip install -r requirements.txt
 ### 初期化
 
 ```python
-dartslive = Dartslive()
+dl = Dartslive()
 # or
-dartslive = Dartslive("mailaddress", "password")
+dl = Dartslive("mailaddress", "password")
 ```
 
 ### ログインボーナスをもらう
 
 ```python
-dartslive.get_bonus()
+dl.get_bonus()
 ```
 
 ### 現在のレートとスタッツを取得する
 
 ```python
-dartslive.get_player_data()
+dl.get_player_data()
 ```
 
 ### 最近のプレイデータを取得する
 
 ```python
-dartslive.get_latest_list()
+dl.get_latest_list()
 ```
 
 ### 当日と前日のプレイデータを取得する
 
 ```python
-dartslive.get_player_data()
+dl.get_player_data()
 ```
