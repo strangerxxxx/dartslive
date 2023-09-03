@@ -28,11 +28,15 @@ dl = Dartslive("mailaddress", "password")
 dl.get_bonus()
 ```
 
+ログインボーナスを入手したかbool値で返します。
+
 ### 現在のレートとスタッツを取得する
 
 ```python
 dl.get_player_data()
 ```
+
+`(レート, 01スタッツ, クリケットスタッツ)`を返します。
 
 ### 最近のプレイデータを取得する
 
@@ -40,8 +44,12 @@ dl.get_player_data()
 dl.get_latest_list()
 ```
 
+Generatorで、`(日付, ゲーム種別, スタッツ)`を返します。
+
 ### 当日と前日のプレイデータを取得する
 
 ```python
-dl.get_player_data()
+dl.get_playdata()
 ```
+
+Generatorで、`(日付, ゲーム種別, スタッツ)`を返します。
